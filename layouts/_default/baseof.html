@@ -7,7 +7,7 @@
     {{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 
-    {{ .Hugo.Generator }}
+    {{ hugo.Generator }}
     {{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
     {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">

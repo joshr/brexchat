@@ -1,6 +1,7 @@
 # Generated files
 dev/
 public/
+.DS_Store
 
 # Hugo directories
 # Note: Netlify does not currently support extended sass processing.
