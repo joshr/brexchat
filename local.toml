@@ -1,4 +1,4 @@
-baseURL = "https://techforuk.github.io/brexchat/"
+baseURL = "http://localhost:1313/brexchat/"
 languageCode = "en-gb"
 title = "TalkAboutBrex"
 [params]
